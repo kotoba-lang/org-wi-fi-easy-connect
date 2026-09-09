@@ -1,0 +1,2 @@
+;; nbb does not resolve :deps; sibling :paths only (ADR-2607173000).
+{:paths ["src" "test"]}
