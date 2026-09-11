@@ -1,4 +1,4 @@
-#!/usr/bin/env nbb
+#!/usr/bin/env kbb
 ;; dpp.uri against independent references.
 ;;
 ;; Two things are checked by a DIFFERENT code path than the one under test:
