@@ -85,7 +85,7 @@ it returns an error instead of shipping it to a phone.
 
 ## What is verified, and what is not
 
-**Verified** (`nbb test/dpp/uri_test.cljs`, 35 checks):
+**Verified** (`nbb test/dpp/uri_test.cljk`, 35 checks):
 
 - base64 decoding against Node's `Buffer` — a different code path;
 - a real P-256 key from Node's ECDH, with the SubjectPublicKeyInfo **built by
@@ -124,12 +124,12 @@ still passes first, so a broken copy cannot be mistaken for a discriminating one
 ## Run
 
 ```sh
-nbb --classpath src:test test/dpp/uri_test.cljs   # from this directory
+nbb --classpath src:test test/dpp/uri_test.cljk   # from this directory
 ```
 
 The suite is an nbb script, not a `clojure.test` namespace, so it runs under
 nbb only; `deps.edn` carries the workspace's standard `:test` / `:lint` aliases
-but no JVM suite has been written or run here. `src/dpp/uri.cljc` is portable
+but no JVM suite has been written or run here. `src/dpp/uri.cljk` is portable
 `.cljc` and the JVM reader branches are exercised by the reader conditionals,
 not by a green JVM run — do not report one.
 
