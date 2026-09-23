@@ -18,7 +18,7 @@
 
   The split exists because `parse` returning a map is not evidence the URI is
   usable, and a single function that did both would have no way to say so."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── bytes ─────────────────────────────────────────────────────────────────
 
