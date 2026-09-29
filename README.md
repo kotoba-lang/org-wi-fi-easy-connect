@@ -4,7 +4,7 @@
 machine shows so a phone can put it on a network without anyone typing a
 password.**
 
-The name follows the origin-plane rule (CLAUDE.md, ADR-2608040100): Wi-Fi Easy
+The name follows the origin-plane rule (AGENTS.md, ADR-2608040100): Wi-Fi Easy
 Connect is specified by the Wi-Fi Alliance, so the reverse-DNS of the authority
 (`wi-fi.org` → `org-wi-fi`) plus the subject gives `org-wi-fi-easy-connect`.
 
